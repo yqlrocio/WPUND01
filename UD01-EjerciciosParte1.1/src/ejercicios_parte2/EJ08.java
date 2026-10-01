@@ -19,21 +19,22 @@ public class EJ08 {
 	//	correspondiente en centímetros. Utiliza la 
 	//	conversión de tipos.
 
-
 		// Creamos scanner 
 		Scanner reader = new Scanner(System.in);
 
-		// Creamos variable para almacenar 
+		// Creamos variable para almacenar la longitud
+		double longitud; 
+		
+		// Pedir al usuario introducir una longitud
+		System.out.println("Introduce una longirud: ");
+		longitud = reader.nextDouble(); 
 		
 		
-		// Pedir al usuario 
-		System.out.println("Introduce  ");
-		
-		// 
-		
+		// Pasar la longitud de metro a centímretro
+		longitud = longitud * 100; 
 		
 		// Mostrar por pantalla 
-		System.out.println(" " + );
+		System.out.println("La longitud en centímretros es --> " + Math.floor(longitud));
 		
 		// Cerramos scanner
 		reader.close();

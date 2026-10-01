@@ -23,7 +23,8 @@ public class EJ07 {
 		double infantil; 
 		double adulto;
 		double descuento = 0.05; 
-		double total; 
+		double totalSinRebaja; 
+		double totalRebaja; 
 		
 		// Pedir al usuario cuántas entradas infantiles y adultas quieren comprar
 		System.out.println("¿Cuántas entradas infantiles quieres comprar?");
@@ -33,13 +34,14 @@ public class EJ07 {
 		adulto = reader.nextDouble(); 
 		
 		// Calcular el precio
-		total = infantil * 15.50 + adulto * 20; 
+		totalSinRebaja = infantil * 15.50 + adulto * 20; 
+		totalRebaja = totalSinRebaja - (totalSinRebaja * descuento);
 		
 		// Mostrar por pantalla el precio total 
-		if (total > 100) {
-			System.out.println();
+		if (totalSinRebaja > 100) {
+			System.out.println("Tu precio final es --> " + totalSinRebaja);
 		}
-		System.out.println(" " + );
+		System.out.println("Tu precio final es --> " + totalRebaja);
 		
 		// Cerramos scanner
 		reader.close();
