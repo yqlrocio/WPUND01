@@ -38,7 +38,7 @@ public class EJ07 {
 		totalRebaja = totalSinRebaja - (totalSinRebaja * descuento);
 		
 		// Mostrar por pantalla el precio total 
-		if (totalSinRebaja > 100) {
+		if (totalSinRebaja >= 100) {
 			System.out.println("Tu precio final es --> " + totalSinRebaja);
 		}
 		System.out.println("Tu precio final es --> " + totalRebaja);
